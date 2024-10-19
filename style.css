@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rajdhani", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(23, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height:90%;
+    background:linear-gradient(to top, rgba(4,160,177,0.11),rgba(170, 69, 170, 0.415));
+    box-shadow: 2px 2px 10px rgb(4, 160,177),-2px -2px 10px rgb(240, 188, 240);
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+h1{
+    font-size: 3vmax;
+    text-shadow: 2px 2px 10px rgb(4, 160,177);
+    -webkit-text-stroke:1px rgb(4, 160,177) ;
+    text-align: center;
+}
+.input{
+    width: 90%;
+    height: 30%;
+    background: linear-gradient(to right, rgb(3, 19,22),rgb(160, 161,235));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 2vmax;
+    border-radius: 20px;
+}
+#input{
+    width: 70%;
+    height: 30px;
+    background-color: rgba(10, 46, 49, 0.688);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(4, 160,177),-2px -2px 10px rgb(240, 188, 240);
+    font-size: 1.2vmax;
+    color: aliceblue;
+    box-sizing: border-box;
+    padding: 15px;
+    font-weight: 500;
+}
+#btn{
+    width: 10vw;
+    height: 2vw;
+    background-color: rgba(10, 46, 49, 0.688);
+    border: none;
+    border-radius: 20px;
+    color: rgba(240, 248, 255, 0.682);
+    box-shadow: 2px 2px 10px rgb(4, 160,177);
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1vmax;
+    font-weight: 700;
+}
+#btn:hover{
+    background-color: transparent;
+}
+.output{
+    width: 90%;
+    height: 55%;
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+    
+}
+.image{
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(3, 19,22),rgb(160, 161,235));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+.btns{
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(3, 19,22),rgb(160, 161,235));
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   border-radius: 20px;
+   gap: 5vw;
+}
+#download{
+    width: 9vw;
+    height: 2vw;
+    background-color: rgba(10, 46, 49, 0.688);
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+    box-shadow: 2px 2px 10px rgb(4, 160,177);
+    transition: all 0.3s;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1vmax;
+    font-weight: 500;
+}
+#reset{
+    width: 9vw;
+    height: 2vw;
+    background-color: rgba(10, 46, 49, 0.688);
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+    box-shadow: 2px 2px 10px rgb(4, 160,177);
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1vmax;
+    font-weight: 500;
+}
+#download:hover{
+    background-color: transparent;
+}
+#reset:hover{
+    background-color: transparent;
+}
+#img{
+    width:65%;
+    height: 90%;
+    background-size: cover;
+    border: none;
+    border-radius: 20px;
+    display: none;
+}
+#load{
+    position: absolute;
+    width: 10%;
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
+    display: none;
+}
+@media (min-width:900px) and  (max-width:1200px) {
+    .container{
+        width: 90%;
+    }
+    #download{
+        width: 10vw;
+        height: 3vw;
+        font-size: 1.3vmax;
+    }
+    #reset{
+        width: 10vw;
+        height: 3vw;
+        font-size: 1.3vmax;
+    }
+    #btn{
+        width: 20vw;
+        height: 3vw;
+        font-size: 1.4vmax; 
+        padding: 2vmax;
+    }
+    h1{
+        font-size: 4vmax;
+    }
+    label{
+    font-size: 3vmax;
+    }
+    #input{
+        font-size: 2.5vmax;
+    }
+
+}
+@media (min-width:400px) and (max-width:900px) {
+    .container{
+        width: 90%;
+    }
+    .output{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container{
+        width: 90%;
+        height: 94%;
+    }
+    .image {
+        width: 99%;
+        height: 74%;
+    }
+    .btns {
+        width: 99%;
+        height: 59%;
+        flex-direction: row;
+        gap: 20px;
+    
+    }
+    #reset{
+        width: 15vw;
+    height: 4vw;
+    font-size: 2vmax;
+    }
+    #download{
+        width: 15vw;
+        height: 4vw;
+        font-size: 2vmax;
+    }
+    #btn{
+        width: 20vw;
+        height: 4vw;
+        font-size: 2vmax;
+    }
+    h1{
+        font-size: 4vmax;
+    }
+    label{
+    font-size: 3vmax;
+    }
+    #input{
+        font-size: 2.5vmax;
+    }
+}
+
+    
+
+@media (max-width:400px) {
+    #btn:hover{
+        color: rgba(11, 239, 213, 0.537);
+    }
+    .container{
+        width: 90%;
+    }
+    .output{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container{
+        width: 90%;
+        height: 94%;
+    }
+    .image {
+        width: 106%;
+        height: 98%;
+    }
+    .btns {
+        width: 105%;
+        height: 37%;
+        flex-direction: row;
+        gap: 20px;
+    
+    }
+    #reset{
+        width: 31vw;
+        height: 8vw;
+    font-size: 2vmax;
+    }
+    #download{
+        width: 31vw;
+        height: 8vw;
+        font-size: 2vmax;
+    }
+    #btn{
+        width: 46vw;
+        height: 8vw;
+        font-size: 2.2vmax;
+    }
+    h1{
+        font-size: 4vmax;
+    }
+    label{
+        font-size: 2.8vmax;
+    }
+    #input{
+        font-size: 2.2vmax;
+        width: 91%;
+        height: 33px;
+    }
+    .input{
+        width: 99%;
+    }
+    #reset:hover{
+        color: rgba(11, 239, 213, 0.537);
+    }
+    #download:hover{
+        color: rgba(11, 239, 213, 0.537);
+    }
+}
