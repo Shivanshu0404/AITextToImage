@@ -1,4 +1,4 @@
-const key="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"
+const key="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"
 let inputtext=document.querySelector("#input")
 let image=document.querySelector("#img")
 let Genbutton=document.querySelector("#btn")
@@ -8,7 +8,7 @@ const reset=document.getElementById("reset")
 const downloadbtn=document.getElementById("download")
 async function query(data) {
 	const response = await fetch(
-		"https://api-inference.huggingface.co/models/ZB-Tech/Text-to-Image",
+		"https://router.huggingface.co/fal-ai/fal-ai/fast-sdxl",
 		{
 			headers: {
 				Authorization: `Bearer ${key}` 
